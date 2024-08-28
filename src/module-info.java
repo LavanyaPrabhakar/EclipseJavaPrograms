@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author LPrab
+ *
+ */
+module EclipseJavaPrograms {
+}
