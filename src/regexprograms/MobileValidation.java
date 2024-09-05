@@ -1,6 +1,14 @@
 /*FileHandling
  * Read input from a text file
  * Using Regular Expression find whether the given UK mobile number is valid or not
+ * Sample text file input with different UK mobile numbers:
+ * John:+44 7447488986
+ * Nichola:07447488986
+ * victor:07222 555555
+ * Chloe:(07222) 555555
+ * Patrick:+44 7222 555 555
+ * Joseph:06945867200
+ * Mat:9194586720
  */
 
 package regexprograms;
