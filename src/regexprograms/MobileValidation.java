@@ -17,9 +17,8 @@ public class MobileValidation {
 		{
 			String line = scan.nextLine();
 			String[] parts = line.split(":");
-			String mobile = parts[1];
-            
-            
+			String mobile = parts[1].trim();
+                      
             Pattern p = Pattern.compile("^(\\+44\\s?7\\d{3}|\\(?07\\d{3}\\)?)\\s?\\d{3}\\s?\\d{3}$");
             Matcher m = p.matcher(mobile);
             
@@ -27,8 +26,8 @@ public class MobileValidation {
             { System.out.println(mobile + " is a valid UK mobile number");}
             else 
             { System.out.println(mobile + " is not a valid UK mobile number");}         
-         }
-		scan.close();
+         } 
+		scan.close(); 
         }	      
 	}
 
