@@ -6,9 +6,9 @@ import java.util.Collections;
 public class CollectionsLaptop {
 
 	public static void main(String[] args) {
-		Laptop dell = new Laptop(45000,8,true);
-		Laptop lenova = new Laptop(50000,6,false);
-		Laptop hp = new Laptop(40000,10,true);
+		Laptop dell = new Laptop("Inspiron",45000,8,true);
+		Laptop lenova = new Laptop("Ideapad",50000,6,false);
+		Laptop hp = new Laptop("Pavilion",50000,10,true);
 		
 		ArrayList laptopList = new ArrayList();
 		laptopList.add(dell);
