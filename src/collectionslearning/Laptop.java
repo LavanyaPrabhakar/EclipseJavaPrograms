@@ -1,16 +1,18 @@
 package collectionslearning;
 
 public class Laptop {
+	String brand;
 	int price;
 	int gb;
 	boolean touch;
 	
 	public String toString()
 	{
-		return " "+ this.price +":"+ this.gb +":"+ this.touch;
+		return this.brand+":"+ this.price +":"+ this.gb +":"+ this.touch;
 	}
-	public Laptop(int price, int gb, boolean touch)
+	public Laptop(String brand,int price, int gb, boolean touch)
 	{
+		this.brand = brand;
 	this.price = price;
 	this.gb = gb;
 	this.touch = touch;
