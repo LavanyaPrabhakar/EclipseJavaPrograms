@@ -1,4 +1,4 @@
-package collectionslearning;
+package collectionslearning.list;
 
 import java.util.Comparator;
 

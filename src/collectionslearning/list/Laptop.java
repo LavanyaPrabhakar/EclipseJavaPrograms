@@ -1,4 +1,4 @@
-package collectionslearning;
+package collectionslearning.list;
 
 public class Laptop {
 	String brand;
