@@ -8,7 +8,7 @@ package collectionslearning.list;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CollectionsDemo1 {
+public class ListMethods {
 
 	public static void main(String[] args) {
 	    ArrayList<Integer> numbers = new ArrayList<Integer>();
@@ -21,6 +21,8 @@ public class CollectionsDemo1 {
 	    numbers.add(3);
 	    numbers.add(80);
 	    numbers.add(66);
+	    System.out.println("Methods to perform Manipulative and properties operations :");
+	    System.out.println();
 	    System.out.println("numbers :"+numbers);
 	    
 	    //add(i,e)
@@ -75,11 +77,16 @@ public class CollectionsDemo1 {
 	    
 	    System.out.println("numbers array after replace: "+numbers);
 	    
+	    System.out.println();
+	    System.out.println("Sorting using Collections :");
+	    System.out.println();
 	    System.out.println("Before sorting :"+numbers);
 	    Collections.sort(numbers);
-	    System.out.println("After sorting :"+numbers);
+	    System.out.println("After sorting in ascending order:"+numbers);
+	    Collections.sort(numbers, Collections.reverseOrder());;
+	    System.out.println("After sorting in Descending order:"+numbers);
 	    
-	    System.out.println("Index value of key is :"+Collections.binarySearch(numbers, 23));
+	    System.out.println("Index value of key using binarysearch is :"+Collections.binarySearch(numbers, 23));
 	    
 	
 	    
