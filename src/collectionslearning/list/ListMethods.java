@@ -7,6 +7,7 @@ package collectionslearning.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class ListMethods {
 
@@ -34,7 +35,7 @@ public class ListMethods {
 	    System.out.println("numbers1 :"+numbers1);
 	    
 	  //addAll(i,c)
-	    ArrayList<Integer> numbers2 = new ArrayList<Integer>();
+	    ArrayList numbers2 = new ArrayList();
 	    numbers2.add(100);
 	    numbers2.add(200);
 	    numbers2.add(300);
@@ -60,20 +61,19 @@ public class ListMethods {
 	    //eg : arr.remove(new Integer(3)) -> this will remove first occurence of object with value 3
 	    System.out.println("removal element exists : "+numbers.remove(new Integer(8)));
 	    System.out.println("After removing first occurence of element :"+numbers);
-	    
-	   
-     
-  		//removeAll(c)
+	      
+	    //removeAll(c)
 	    numbers2.removeAll(numbers2);
 	    System.out.println("numbers2 after removeAll :"+numbers2);
 
-  	    
 	    //get(i)
 	    
 	    System.out.println("value at 4th index of numbers array : "+numbers.get(4));
 	    
 	    //set(i,e)
 	    System.out.println("value replaced at 0th index given index of numbers array : "+numbers.set(0, 1000));
+	    
+
 	    
 	    System.out.println("numbers array after replace: "+numbers);
 	    
@@ -88,7 +88,20 @@ public class ListMethods {
 	    
 	    System.out.println("Index value of key using binarysearch is :"+Collections.binarySearch(numbers, 23));
 	    
-	
+	    //clear()
+	    numbers2.clear();
+	    System.out.println("Elements of numbers2 after clear method :"+numbers2);
+	    
+	   //input string values to numbers2
+	    numbers2.add("Anne");
+	    numbers2.add("Katie");
+	    numbers2.add("Rubie");
+	    numbers2.add("Barnwell");
+	    ComparatorListMethods comp = new ComparatorListMethods();
+		Collections.sort(numbers2, comp );
+		System.out.println("sorting in descending order using Comparator :"+numbers2);
+
+	    
 	    
 	    
 	}
